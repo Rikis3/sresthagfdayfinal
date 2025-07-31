@@ -21,19 +21,19 @@ const cuteTexts = [
 // Local photo paths (adjust extensions if needed)
 
 const photoUrls = [
-  "/photos/img (1).PNG",
-  "/photos/img (2).PNG",
-  "/photos/img (3).PNG",
-  "/photos/img (4).PNG",
-  "/photos/img (5).PNG",
-  "/photos/img (6).PNG",
-  "/photos/img (7).PNG",
-  "/photos/img (8).PNG",
-  "/photos/img (9).PNG",
-  "/photos/img (10).PNG",
-  "/photos/img (11).PNG",
-  "/photos/img (12).PNG",
-  "/photos/img (13).PNG",
+  "/photos/img1.PNG",
+  "/photos/img2.PNG",
+  "/photos/img3.PNG",
+  "/photos/img4.PNG",
+  "/photos/img5.PNG",
+  "/photos/img6.PNG",
+  "/photos/img7.PNG",
+  "/photos/img8.PNG",
+  "/photos/img9.PNG",
+  "/photos/img10.PNG",
+  "/photos/img11.PNG",
+  "/photos/img12.PNG",
+  "/photos/img13.PNG",
 ];
 
 const oceanGradients = [
