@@ -19,8 +19,9 @@ const cuteTexts = [
 ];
 
 // Local photo paths (adjust extensions if needed)
-// Local photo paths correctly using space and parentheses
-const photoUrls = Array.from({ length: 13 }, (_, idx) => `/photos/img (${idx + 1}).png`);
+
+const photoUrls = Array.from({ length: 14 }, (_, idx) => `/photos/img (${idx + 1}).PNG`);
+
 
 
 const oceanGradients = [
