@@ -21,10 +21,10 @@ const cuteTexts = [
 // Local photo paths (adjust extensions if needed)
 
 const photoUrls = [
-  'https://github.com/Rikis3/sresthagfdayfinal/blob/main/photos/img1.PNG',
-  'https://github.com/Rikis3/sresthagfdayfinal/blob/main/photos/img2.PNG',
- 'https://github.com/Rikis3/sresthagfdayfinal/blob/main/photos/img3.PNG',
- 'https://github.com/Rikis3/sresthagfdayfinal/blob/main/photos/img4.PNG',
+  '/img1.PNG',
+  '/img2.PNG',
+ '/img3.PNG',
+ '/img4.PNG',
   '/img5.PNG',
  '/img6.PNG',
   "/photos/img7.PNG",
