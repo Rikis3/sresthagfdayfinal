@@ -20,9 +20,21 @@ const cuteTexts = [
 
 // Local photo paths (adjust extensions if needed)
 
-const photoUrls = Array.from({ length: 14 }, (_, idx) => `/photos/img (${idx + 1}).PNG`);
-
-
+const photoUrls = [
+  "/photos/img (1).PNG",
+  "/photos/img (2).PNG",
+  "/photos/img (3).PNG",
+  "/photos/img (4).PNG",
+  "/photos/img (5).PNG",
+  "/photos/img (6).PNG",
+  "/photos/img (7).PNG",
+  "/photos/img (8).PNG",
+  "/photos/img (9).PNG",
+  "/photos/img (10).PNG",
+  "/photos/img (11).PNG",
+  "/photos/img (12).PNG",
+  "/photos/img (13).PNG",
+];
 
 const oceanGradients = [
   'linear-gradient(135deg, #60A5FA 0%, #8B5CF6 50%, #6366F1 100%)',
