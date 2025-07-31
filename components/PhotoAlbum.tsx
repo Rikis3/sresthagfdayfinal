@@ -3,32 +3,38 @@ import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 
 const cuteTexts = [
-  'You light up my world ✨',
-  'Forever yours, love 💕',
-  'Sweetest moments 🌸',
-  'You + Me = ❤️',
-  'Always in my heart 💖',
+  'Your smile is my favorite sunrise',
+  'You are not just my girlfriend, you are my peace 💕',
+  'You’re my favorite hello and hardest goodbye',
+  'Loving you is my favorite habit',
+  'You’re the playlist my heart puts on repeat 💖',
   'Together is my favorite place 🏡',
-  'My sunshine on cloudy days ☀️',
-  'Every day with you is magic ✨',
+  'I still get butterflies every time I see you',
+  'You’re my calm in the chaos',
   'Love you to the moon and back 🌙',
   'You make my heart smile 😊',
   "You're my endless adventure 🗺️",
-  'Our story is my favorite 📖',
-  'With you, forever feels perfect ❤️',
+  'You’re the kind of magic even dreams can’t make up',
+  'Being yours feels like winning the jackpot ❤️',
 ];
 
 // Local photo paths (adjust extensions if needed)
+
 const photoUrls = [
-  "/photos/img5.PNG",
   "/photos/img1.PNG",
-"/photos/img2.PNG",
+  "/photos/img2.PNG",
   "/photos/img3.PNG",
   "/photos/img4.PNG",
+  "/photos/img5.PNG",
   "/photos/img6.PNG",
   "/photos/img7.PNG",
+  "/photos/img8.PNG",
+  "/photos/img9.PNG",
+  "/photos/img10.PNG",
+  "/photos/img11.PNG",
+  "/photos/img12.PNG",
+  "/photos/img13.PNG",
 ];
-
 
 const oceanGradients = [
   'linear-gradient(135deg, #60A5FA 0%, #8B5CF6 50%, #6366F1 100%)',
@@ -46,7 +52,7 @@ const oceanGradients = [
   'linear-gradient(135deg, #fc5c7d 0%, #6a82fb 100%)',
 ];
 
-function mod(n, m) {
+function mod(n: number, m: number) {
   return ((n % m) + m) % m;
 }
 
@@ -58,16 +64,16 @@ export default function PhotoAlbum() {
   useEffect(() => {
     setIsClient(true);
     if (!isClient) return;
-    const bg = document.querySelector('.dynamic-background');
+    const bg = document.querySelector('.dynamic-background') as HTMLElement | null;
     if (bg) {
       bg.style.transition = 'background 0.7s cubic-bezier(.44,1.43,.49,.99)';
-      bg.style.background = oceanGradients[mod(currentIndex, oceanGradients.length)];
+      bg.style.background = oceanGradients[mod(currentIndex, photoUrls.length)];
     }
   }, [currentIndex, isClient]);
 
   // Wheel navigation (desktop)
   const scrollLock = useRef(false);
-  const onWheel = (e) => {
+  const onWheel = (e: React.WheelEvent) => {
     if (dragging.current) return;
     const amt = Math.abs(e.deltaX) > Math.abs(e.deltaY) ? e.deltaX : e.deltaY;
     if (!scrollLock.current && Math.abs(amt) > 12) {
@@ -78,9 +84,9 @@ export default function PhotoAlbum() {
   };
 
   // Touch navigation (mobile)
-  const tX = useRef(null);
-  const onTouchStart = (e) => { tX.current = e.touches[0].clientX; };
-  const onTouchEnd = (e) => {
+  const tX = useRef<number | null>(null);
+  const onTouchStart = (e: React.TouchEvent) => { tX.current = e.touches[0].clientX; };
+  const onTouchEnd = (e: React.TouchEvent) => {
     if (tX.current == null) return;
     const diff = tX.current - e.changedTouches[0].clientX;
     if (diff > 24) setCurrentIndex(i => mod(i + 1, photoUrls.length));
@@ -88,9 +94,9 @@ export default function PhotoAlbum() {
     tX.current = null;
   };
 
-  // Drag navigation (Framer Motion)
+  // Drag navigation (desktop/mobile, via Framer Motion)
   const onDragStart = () => { dragging.current = true; };
-  const onDragEnd = (_evt, info) => {
+  const onDragEnd = (_: any, info: any) => {
     dragging.current = false;
     if (info.offset.x > 60) setCurrentIndex(i => mod(i - 1, photoUrls.length));
     else if (info.offset.x < -60) setCurrentIndex(i => mod(i + 1, photoUrls.length));
@@ -180,10 +186,57 @@ export default function PhotoAlbum() {
         )}
       </div>
 
-      {/* Photo Counter */}
+      {/* Play Our Song – centered + animated shimmer */}
+      <div className="mt-8 w-full flex items-center justify-center text-center">
+        <a
+          href="https://www.youtube.com/watch?v=u9raS7-NisU"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="play-song-anim block bg-red-600 text-white px-6 py-3 font-semibold rounded-lg relative overflow-hidden shadow hover:bg-red-700 focus:bg-red-700 transition-all backdrop-blur-lg text-center"
+          tabIndex={0}
+          style={{ fontFamily: "'Inter','Google Sans','Product Sans',Arial,sans-serif", letterSpacing: '-0.01em' }}
+        >
+          <span className="relative z-10">🎵 Play Our Song</span>
+          <span className="absolute inset-0 pointer-events-none shimmer"></span>
+        </a>
+      </div>
+
+      {/* Photo Counter – center-aligned */}
       <div className="mt-4 text-white/80 text-lg font-sans text-center">
         {currentIndex + 1} / {photoUrls.length}
       </div>
+
+      {/* Shimmer effect for button (ensure in your Tailwind build!) */}
+      <style jsx global>{`
+        .play-song-anim {
+          position: relative;
+          overflow: hidden;
+        }
+        .play-song-anim .shimmer {
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(
+            110deg,
+            rgba(255,255,255,0) 0%,
+            rgba(255,255,255,0.12) 36%,
+            rgba(255,255,255,0.45) 49%,
+            rgba(255,255,255,0.13) 63%,
+            rgba(255,255,255,0) 100%
+          );
+          background-size: 200% 100%;
+          animation: shimmer-move 2.2s linear infinite;
+          z-index: 5;
+          mix-blend-mode: lighten;
+        }
+        @keyframes shimmer-move {
+          0% { background-position: -120% 0; }
+          100% { background-position: 120% 0; }
+        }
+        .font-sans {
+          font-family: 'Inter', 'Google Sans', 'Product Sans', Arial, sans-serif;
+          letter-spacing: -0.01em;
+        }
+      `}</style>
     </div>
   );
 }
