@@ -11,7 +11,7 @@ export default function LiquidText({ stage }: LiquidTextProps) {
 
   useEffect(() => {
     setIsClient(true);
-    setText('Happy Girlfriends Day Srestha❤️');
+    setText('Happy Girlfriend Day Srestha❤️');
   }, []);
 
   return (
