@@ -19,7 +19,9 @@ const cuteTexts = [
 ];
 
 // Local photo paths (adjust extensions if needed)
-const photoUrls = Array.from({ length: 13 }, (_, idx) => `/photos/img${idx + 1}.png`);
+// Local photo paths correctly using space and parentheses
+const photoUrls = Array.from({ length: 13 }, (_, idx) => `/photos/img (${idx + 1}).png`);
+
 
 const oceanGradients = [
   'linear-gradient(135deg, #60A5FA 0%, #8B5CF6 50%, #6366F1 100%)',
