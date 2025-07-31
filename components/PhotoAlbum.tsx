@@ -19,19 +19,20 @@ const cuteTexts = [
 ];
 
 const photoUrls = [
-  'https://sresthagfdayfinal.vercel.app/img7.PNG',       // must exist at public/img1.PNG
-  'https://sresthagfdayfinal.vercel.app/img7.PNG',       // must exist at public/img2.PNG
-  '/img3.PNG',
-  '/img4.PNG',
-  '/img5.PNG',
-  '/img6.PNG',
-  '/photos/img7.PNG',   // must exist at public/photos/img7.PNG
-  '/photos/img8.PNG',
-  '/photos/img9.PNG',
-  '/photos/img10.PNG',
-  '/photos/img11.PNG',
-  '/photos/img12.PNG',
-  '/photos/img13.PNG',
+  'https://sresthagfdayfinal.vercel.app/img1.PNG',       // must exist at public/img1.PNG
+  'https://sresthagfdayfinal.vercel.app/img2.PNG',       // must exist at public/img2.PNG
+  'https://sresthagfdayfinal.vercel.app/img3.PNG', 
+  'https://sresthagfdayfinal.vercel.app/img4.PNG', 
+  'https://sresthagfdayfinal.vercel.app/img5.PNG', 
+  'https://sresthagfdayfinal.vercel.app/img6.PNG', 
+  'https://sresthagfdayfinal.vercel.app/img7.PNG', 
+  'https://sresthagfdayfinal.vercel.app/img8.PNG', 
+  'https://sresthagfdayfinal.vercel.app/img9.PNG', 
+  'https://sresthagfdayfinal.vercel.app/img10.PNG', 
+  'https://sresthagfdayfinal.vercel.app/img11.PNG', 
+  'https://sresthagfdayfinal.vercel.app/img12.PNG', 
+  'https://sresthagfdayfinal.vercel.app/img13.PNG', 
+ 
 ];
 
 const oceanGradients = [
