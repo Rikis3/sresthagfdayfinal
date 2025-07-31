@@ -18,22 +18,20 @@ const cuteTexts = [
   'Being yours feels like winning the jackpot ❤️',
 ];
 
-// Local photo paths (adjust extensions if needed)
-
 const photoUrls = [
-  '/img1.PNG',
-  '/img2.PNG',
- '/img3.PNG',
- '/img4.PNG',
+  '/img1.PNG',       // must exist at public/img1.PNG
+  '/img2.PNG',       // must exist at public/img2.PNG
+  '/img3.PNG',
+  '/img4.PNG',
   '/img5.PNG',
- '/img6.PNG',
-  "/photos/img7.PNG",
-  "/photos/img8.PNG",
-  "/photos/img9.PNG",
-  "/photos/img10.PNG",
-  "/photos/img11.PNG",
-  "/photos/img12.PNG",
-  "/photos/img13.PNG",
+  '/img6.PNG',
+  '/photos/img7.PNG',   // must exist at public/photos/img7.PNG
+  '/photos/img8.PNG',
+  '/photos/img9.PNG',
+  '/photos/img10.PNG',
+  '/photos/img11.PNG',
+  '/photos/img12.PNG',
+  '/photos/img13.PNG',
 ];
 
 const oceanGradients = [
