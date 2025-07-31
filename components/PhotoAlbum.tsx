@@ -3,22 +3,47 @@ import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 
 const cuteTexts = [
-  'Your smile is my favorite sunrise',
-  'You are not just my girlfriend, you are my peace 💕',
-  'You’re my favorite hello and hardest goodbye',
-  // Add more as you add images!
+  'You light up my world ✨',
+  'Forever yours, love 💕',
+  'Sweetest moments 🌸',
+  'You + Me = ❤️',
+  'Always in my heart 💖',
+  'Together is my favorite place 🏡',
+  'My sunshine on cloudy days ☀️',
+  'Every day with you is magic ✨',
+  'Love you to the moon and back 🌙',
+  'You make my heart smile 😊',
+  "You're my endless adventure 🗺️",
+  'Our story is my favorite 📖',
+  'With you, forever feels perfect ❤️',
 ];
 
+// Local photo paths (adjust extensions if needed)
 const photoUrls = [
-  "https://drive.google.com/uc?export=view&id=1dr95IhKYSkjwJab7PqU9ObPkNHnS9UG1",
-  "https://drive.google.com/uc?export=view&id=1GE5KS5mC0LspiQP59yhRhCGT43g8E4fi",
-  "https://drive.google.com/uc?export=view&id=1paryYM8pSz1JnQzPbK-m1I4R6AzirJtv",
+  "/photos/img5.PNG",
+  "/photos/img1.PNG",
+"/photos/img2.PNG",
+  "/photos/img3.PNG",
+  "/photos/img4.PNG",
+  "/photos/img6.PNG",
+  "/photos/img7.PNG",
 ];
+
 
 const oceanGradients = [
   'linear-gradient(135deg, #60A5FA 0%, #8B5CF6 50%, #6366F1 100%)',
   'linear-gradient(135deg, #3B82F6 0%, #8B5CF6 50%, #6D28D9 100%)',
-  'linear-gradient(135deg, #06B6D4 0%, #3B82F6 50%, #8B5CF6 100%)'
+  'linear-gradient(135deg, #06B6D4 0%, #3B82F6 50%, #8B5CF6 100%)',
+  'linear-gradient(135deg, #8B5CF6 0%, #6366F1 50%, #4F46E5 100%)',
+  'linear-gradient(135deg, #0EA5E9 0%, #06B6D4 50%, #8B5CF6 100%)',
+  'linear-gradient(135deg, #f7971e 0%, #ffd200 100%)',
+  'linear-gradient(135deg, #F7971E 0%, #FFD200 100%)',
+  'linear-gradient(135deg, #5651F7 0%, #F35588 100%)',
+  'linear-gradient(135deg, #00F2FE 0%, #4FACFE 100%)',
+  'linear-gradient(135deg, #43C6AC 0%, #191654 100%)',
+  'linear-gradient(135deg, #FDAE61 0%, #FEE08B 100%)',
+  'linear-gradient(135deg, #38ef7d 0%, #11998e 100%)',
+  'linear-gradient(135deg, #fc5c7d 0%, #6a82fb 100%)',
 ];
 
 function mod(n, m) {
