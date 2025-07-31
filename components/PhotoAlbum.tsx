@@ -36,7 +36,7 @@ const photoUrls = [
   "/photos/img13.PNG",
 ];
 
-const oceanGradients = [
+/*const oceanGradients = [
   'linear-gradient(135deg, #60A5FA 0%, #8B5CF6 50%, #6366F1 100%)',
   'linear-gradient(135deg, #3B82F6 0%, #8B5CF6 50%, #6D28D9 100%)',
   'linear-gradient(135deg, #06B6D4 0%, #3B82F6 50%, #8B5CF6 100%)',
@@ -51,7 +51,7 @@ const oceanGradients = [
   'linear-gradient(135deg, #38ef7d 0%, #11998e 100%)',
   'linear-gradient(135deg, #fc5c7d 0%, #6a82fb 100%)',
 ];
-
+*/
 function mod(n: number, m: number) {
   return ((n % m) + m) % m;
 }
