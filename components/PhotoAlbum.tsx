@@ -195,7 +195,7 @@ export default function PhotoAlbum() {
           tabIndex={0}
           style={{ fontFamily: "'Inter','Google Sans','Product Sans',Arial,sans-serif", letterSpacing: '-0.01em' }}
         >
-          <span className="relative z-10">🎵 Play Our Song</span>
+          <span className="relative z-10">🎵 Play Our Song. I love You Sre</span>
           <span className="absolute inset-0 pointer-events-none shimmer"></span>
         </a>
       </div>
