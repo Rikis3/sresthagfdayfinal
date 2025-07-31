@@ -31,7 +31,7 @@ const photoUrls = [
   'https://sresthagfdayfinal.vercel.app/img10.PNG', 
   'https://sresthagfdayfinal.vercel.app/img11.PNG', 
   'https://sresthagfdayfinal.vercel.app/img12.PNG', 
-  'https://sresthagfdayfinal.vercel.app/img13.PNG', 
+  'https://sresthagfdayfinal.vercel.app/img14.PNG', 
  
 ];
 
