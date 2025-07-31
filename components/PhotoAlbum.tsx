@@ -21,12 +21,12 @@ const cuteTexts = [
 // Local photo paths (adjust extensions if needed)
 
 const photoUrls = [
-  "/img1.PNG",
-  "img2.PNG",
-  "/photos/img3.PNG",
-  "/photos/img4.PNG",
-  "/photos/img5.PNG",
-  "/photos/img6.PNG",
+  '/img1.PNG',
+  '/img2.PNG',
+ '/img3.PNG',
+ '/img4.PNG',
+  '/img5.PNG',
+ '/img6.PNG',
   "/photos/img7.PNG",
   "/photos/img8.PNG",
   "/photos/img9.PNG",
