@@ -19,8 +19,8 @@ const cuteTexts = [
 ];
 
 const photoUrls = [
-  '/img1.PNG',       // must exist at public/img1.PNG
-  '/img2.PNG',       // must exist at public/img2.PNG
+  'https://sresthagfdayfinal.vercel.app/img7.PNG',       // must exist at public/img1.PNG
+  'https://sresthagfdayfinal.vercel.app/img7.PNG',       // must exist at public/img2.PNG
   '/img3.PNG',
   '/img4.PNG',
   '/img5.PNG',
