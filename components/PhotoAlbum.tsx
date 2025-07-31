@@ -21,19 +21,19 @@ const cuteTexts = [
 // Local photo paths (adjust extensions if needed)
 
 const photoUrls = [
-  "/img1.PNG",
-  "/img2.PNG",
-  "/img3.PNG",
-  "/img4.PNG",
-  "/img5.PNG",
-  "/photos/img6.PNG",
-  "/photos/img7.PNG",
-  "/photos/img8.PNG",
-  "/photos/img9.PNG",
-  "/photos/img10.PNG",
-  "/photos/img11.PNG",
-  "/photos/img12.PNG",
-  "/photos/img13.PNG",
+  "https://github.com/Rikis3/sresthagfdayfinal/blob/main/photos/img1.PNG",
+  "https://github.com/Rikis3/sresthagfdayfinal/blob/main/photos/img1.PNG",
+  "https://github.com/Rikis3/sresthagfdayfinal/blob/main/photos/img1.PNG",
+  "https://github.com/Rikis3/sresthagfdayfinal/blob/main/photos/img1.PNG",
+  "https://github.com/Rikis3/sresthagfdayfinal/blob/main/photos/img1.PNG",
+  "https://github.com/Rikis3/sresthagfdayfinal/blob/main/photos/img1.PNG",
+  "https://github.com/Rikis3/sresthagfdayfinal/blob/main/photos/img1.PNG",
+  "https://github.com/Rikis3/sresthagfdayfinal/blob/main/photos/img1.PNG",
+  "https://github.com/Rikis3/sresthagfdayfinal/blob/main/photos/img1.PNG",
+  "https://github.com/Rikis3/sresthagfdayfinal/blob/main/photos/img1.PNG",
+  "https://github.com/Rikis3/sresthagfdayfinal/blob/main/photos/img1.PNG",
+  "https://github.com/Rikis3/sresthagfdayfinal/blob/main/photos/img1.PNG",
+  "https://github.com/Rikis3/sresthagfdayfinal/blob/main/photos/img1.PNG",
 ];
 
 const oceanGradients = [
